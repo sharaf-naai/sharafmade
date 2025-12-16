@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Garrison Pub - Small Heath. Est 1919. By Order of the Peaky Blinders.">
+    <title>The Garrison | Small Heath</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#0b0c10] text-[#c5c6c7] overflow-x-hidden">
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <div class="noise-overlay"></div>
+    
+    <div class="svg-background-container">
+        <svg viewBox="0 0 1440 3200" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMin slice">
+            <path id="scrollPath" d="M720,0 C720,400 200,600 200,1000 C200,1400 1240,1600 1240,2000 C1240,2400 720,2600 720,3200" stroke="#c5a059" stroke-width="2" stroke-opacity="0.3" fill="none"/>
+        </svg>
+    </div>
+
+    <div id="preloader" class="fixed inset-0 z-[999] bg-[#050505] flex flex-col justify-center items-center text-[#c5a059]">
+        <div class="text-2xl md:text-4xl font-vintage tracking-[0.3em] md:tracking-[0.5em] animate-pulse text-center px-4">BY ORDER OF...</div>
+        <div class="mt-6 w-32 md:w-48 h-[1px] bg-[#c5a059]/30 overflow-hidden">
+            <div class="w-full h-full bg-[#c5a059] loading-bar"></div>
+        </div>
+    </div>
+
+    <nav class="fixed top-0 w-full p-6 md:p-8 flex justify-between items-center z-50 mix-blend-difference pointer-events-none">
+        <div class="pointer-events-auto cursor-pointer group">
+            <span class="font-vintage text-[#c5a059] text-lg md:text-xl tracking-widest group-hover:text-white transition-colors duration-500">EST. 1919</span>
+        </div>
+        
+        <ul class="flex gap-4 md:gap-12 font-vintage text-[10px] md:text-xs tracking-[0.2em] text-[#c5a059] pointer-events-auto">
+            <li class="cursor-pointer hover:text-white transition-colors duration-300" data-scroll-to="#brothers">FAMILY</li>
+            <li class="cursor-pointer hover:text-white transition-colors duration-300" data-scroll-to="#menu">SPIRITS</li>
+            <li class="cursor-pointer hover:text-white transition-colors duration-300" data-scroll-to="#location">HOME</li>
+        </ul>
+    </nav>
+
+    <main class="smooth-scroll" id="main-container">
+
+        <section id="hero" class="h-screen w-full relative flex flex-col justify-center items-center overflow-hidden" data-scroll-section>
+            <div class="z-10 text-center mix-blend-overlay opacity-0 hero-text-reveal px-4" data-scroll data-scroll-speed="-1.5">
+                <h1 class="font-vintage text-[15vw] md:text-[13vw] leading-[0.8] text-[#4a0e0e] tracking-tighter uppercase whitespace-nowrap drop-shadow-2xl">
+                    The<br><span class="text-[#c5a059]">Garrison</span>
+                </h1>
+                <p class="font-body tracking-[0.5em] md:tracking-[0.8em] text-[#c5a059] mt-6 text-xs md:text-sm uppercase">Small Heath • Birmingham</p>
+            </div>
+
+            <div class="hero-bottles-wrapper absolute inset-0 pointer-events-none z-30">
+                <img id="img1" src="assets/Polly.png" alt="Polly Gin" class="bottle-hero left-bottle">
+                <img id="img2" src="assets/Red.png" alt="Red Wine" class="bottle-hero right-bottle">
+            </div>
+
+            <div class="absolute bottom-10 flex flex-col items-center gap-2 text-[#c5a059]/60 mix-blend-screen animate-bounce-slow z-10">
+                <span class="text-[10px] tracking-[0.3em] uppercase font-vintage">Enter the Pub</span>
+                <div class="w-[1px] h-12 bg-gradient-to-b from-[#c5a059] to-transparent"></div>
+            </div>
+        </section>
+
+
+        <section id="brothers" class="min-h-screen py-20 md:py-32 flex items-center relative overflow-hidden" data-scroll-section>
+             <div class="max-w-7xl mx-auto px-6 w-full relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
+                
+                <div class="relative group reveal-image order-2 md:order-1" data-scroll data-scroll-speed="0.5">
+                    <img src="assets/brothers.webp" alt="Shelby Brothers" loading="lazy" class="w-full grayscale contrast-125 shadow-[0_20px_50px_rgba(0,0,0,0.5)] border-b-4 border-[#c5a059] transition-all duration-700 ease-in-out group-hover:grayscale-0 group-hover:contrast-100">
+                </div>
+
+                <div class="space-y-6 md:space-y-8 reveal-text order-1 md:order-2" data-scroll data-scroll-speed="1">
+                    <h2 class="font-vintage text-4xl md:text-5xl text-[#c5a059]">The Shelby Company Ltd.</h2>
+                    <div class="w-24 h-[2px] bg-[#4a0e0e]"></div>
+                    <p class="font-body text-base md:text-xl leading-relaxed text-justify text-gray-400">
+                        "We're not politicians, we're businessmen."
+                    </p>
+                    <p class="font-body text-base md:text-lg leading-relaxed text-justify text-gray-500">
+                        Owned and operated by Thomas and Arthur Shelby. The Garrison isn't just a pub; it's the headquarters of an empire built on ambition, loyalty, and fine Irish whiskey.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="story" class="min-h-[60vh] md:min-h-[80vh] py-32 flex items-center relative overflow-hidden" data-scroll-section>
+            <div class="absolute top-0 right-0 w-full md:w-[70%] h-full opacity-10 pointer-events-none mix-blend-luminosity" data-scroll data-scroll-speed="-2">
+                <img src="assets/horse.jpg" alt="Thomas Shelby Horse" loading="lazy" class="w-full h-full object-cover grayscale sepia">
+            </div>
+
+            <div class="max-w-4xl mx-auto px-6 w-full relative z-10 text-center reveal-text" data-scroll data-scroll-speed="0.5">
+                 <h2 class="font-vintage text-3xl md:text-4xl text-[#c5a059] mb-6 md:mb-8">No F*cking Fighting.</h2>
+                 <p class="font-body text-xl md:text-2xl leading-relaxed text-gray-400 italic">
+                    "Good whiskey tells you who's real and who isn't."
+                </p>
+            </div>
+        </section>
+
+
+        <section id="menu" class="min-h-screen py-20 md:py-32 relative" data-scroll-section>
+             <div class="absolute inset-0 opacity-5 bg-[url('https://www.transparenttextures.com/patterns/black-linen.png')]"></div>
+            
+            <div class="text-center mb-24 relative z-10" data-scroll data-scroll-speed="1">
+                <h2 class="font-vintage text-5xl md:text-6xl text-[#c5a059] mb-4 drop-shadow-lg">The Cellar</h2>
+                <p class="font-body text-xs tracking-[0.5em] text-gray-500 uppercase">Imported by the Peaky Blinders</p>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-y-24 md:gap-y-40 gap-x-12 relative z-20">
+
+                <div class="menu-card group">
+                    <div class="card-bg"></div>
+                    <div id="container1" class="bottle-container"></div>
+                    <div class="card-info opacity-0 fade-in-text">
+                        <h3>Aunt Polly's Gin</h3>
+                        <div class="separator"></div>
+                        <p>£12.00</p>
+                    </div>
+                </div>
+
+                <div class="menu-card group mt-8 md:mt-0">
+                    <div class="card-bg"></div>
+                    <div class="bottle-container">
+                        <img src="assets/Changretta.png" loading="lazy" class="static-bottle">
+                    </div>
+                    <div class="card-info">
+                        <h3>Changretta's Revenge</h3>
+                        <div class="separator"></div>
+                        <p>£14.00</p>
+                    </div>
+                </div>
+
+                 <div class="menu-card group">
+                    <div class="card-bg"></div>
+                    <div id="container2" class="bottle-container"></div>
+                    <div class="card-info opacity-0 fade-in-text">
+                        <h3>Red Right Hand</h3>
+                        <div class="separator"></div>
+                        <p>£16.00</p>
+                    </div>
+                </div>
+
+                <div class="menu-card group mt-8 md:mt-0">
+                    <div class="card-bg"></div>
+                    <div class="bottle-container">
+                        <img src="assets/Solomon.png" loading="lazy" class="static-bottle">
+                    </div>
+                    <div class="card-info">
+                        <h3>Alfie's Rum</h3>
+                        <div class="separator"></div>
+                        <p>£13.00</p>
+                    </div>
+                </div>
+
+                <div class="menu-card group">
+                    <div class="card-bg"></div>
+                    <div class="bottle-container">
+                        <img src="assets/Grace.png" loading="lazy" class="static-bottle">
+                    </div>
+                    <div class="card-info">
+                        <h3>Grace's Secret</h3>
+                        <div class="separator"></div>
+                        <p>£18.00</p>
+                    </div>
+                </div>
+
+                 <div class="menu-card group mt-8 md:mt-0">
+                    <div class="card-bg"></div>
+                    <div class="bottle-container">
+                        <img src="assets/Small.png" loading="lazy" class="static-bottle">
+                    </div>
+                    <div class="card-info">
+                        <h3>Small Heath Stout</h3>
+                        <div class="separator"></div>
+                        <p>£8.00</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="betting" class="min-h-[60vh] bg-[#050505] relative flex flex-col justify-center items-center py-24 border-y border-[#c5a059]/20" data-scroll-section>
+            <div class="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/black-chalk.png')]"></div>
+            <div class="relative z-10 w-full max-w-6xl px-6">
+                
+                <div class="flex flex-col md:flex-row justify-between items-end mb-12 border-b-2 border-[#c5a059] pb-4" data-scroll data-scroll-speed="0.5">
+                    <div class="mb-4 md:mb-0">
+                        <h2 class="font-vintage text-3xl md:text-4xl text-[#c5a059]">Upcoming Races</h2>
+                        <p class="font-body text-gray-500 text-sm tracking-[0.3em] mt-2">BY ORDER OF THE PEAKY BLINDERS</p>
+                    </div>
+                    <div class="text-left md:text-right w-full md:w-auto">
+                        <p class="font-vintage text-lg md:text-xl text-white animate-pulse">LIVE ODDS</p>
+                        <p class="font-mono text-[#c5a059]">BIRMINGHAM • 19:00 PM</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 gap-4 font-vintage">
+                    <div class="race-row group relative bg-[#1a1a1a] p-4 md:p-6 border border-[#333] hover:border-[#c5a059] transition-colors duration-300 flex justify-between items-center cursor-pointer">
+                        <div class="flex items-center gap-4 md:gap-6">
+                            <span class="text-3xl md:text-4xl text-[#c5a059]/30 font-bold group-hover:text-[#c5a059] transition-colors">01</span>
+                            <div>
+                                <h3 class="text-lg md:text-2xl text-white">Monaghan Boy</h3>
+                                <p class="font-body text-[10px] md:text-xs text-gray-500 tracking-widest">JOCKEY: T. SHELBY</p>
+                            </div>
+                        </div>
+                        <div class="text-2xl md:text-3xl text-[#c5a059] odds-ticker">5/2</div>
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1534009395272-3595b163351a?q=80&w=800')] opacity-0 group-hover:opacity-10 bg-cover bg-center transition-opacity duration-500 pointer-events-none"></div>
+                    </div>
+                    <div class="race-row group relative bg-[#1a1a1a] p-4 md:p-6 border border-[#333] hover:border-[#c5a059] transition-colors duration-300 flex justify-between items-center cursor-pointer">
+                        <div class="flex items-center gap-4 md:gap-6">
+                            <span class="text-3xl md:text-4xl text-[#c5a059]/30 font-bold group-hover:text-[#c5a059] transition-colors">02</span>
+                            <div>
+                                <h3 class="text-lg md:text-2xl text-white">Grace's Secret</h3>
+                                <p class="font-body text-[10px] md:text-xs text-gray-500 tracking-widest">JOCKEY: A. SOLOMONS</p>
+                            </div>
+                        </div>
+                        <div class="text-2xl md:text-3xl text-[#c5a059] odds-ticker">7/1</div>
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1598978644535-df4d306b9961?q=80&w=800')] opacity-0 group-hover:opacity-10 bg-cover bg-center transition-opacity duration-500 pointer-events-none"></div>
+                    </div>
+                </div>
+                <div class="mt-8 text-center">
+                    <p class="text-[10px] text-gray-600 tracking-widest uppercase">*Gambling is for sinners. We are all sinners.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="location" class="min-h-screen py-20 md:py-32 flex items-center relative" data-scroll-section>
+            <div class="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center relative z-10">
+               <div class="space-y-8 order-2 md:order-1 reveal-text" data-scroll data-scroll-speed="0.5">
+                   <h2 class="font-vintage text-4xl md:text-5xl text-[#c5a059]">Small Heath Home</h2>
+                   <div class="w-24 h-[2px] bg-[#4a0e0e]"></div>
+                   <p class="font-body text-lg md:text-xl leading-relaxed text-justify text-gray-400">Garrison Lane, Birmingham.</p>
+                   <p class="font-body text-base md:text-lg leading-relaxed text-justify text-gray-500">Find the green door on the corner. If you hear singing, come on in. If you hear shouting, keep walking.</p>
+               </div>
+                <div class="relative group order-1 md:order-2 reveal-image" data-scroll data-scroll-speed="1">
+                    <img src="assets/pub.jpg" alt="Garrison Pub Location" loading="lazy" class="w-full grayscale contrast-125 shadow-2xl border-4 border-[#c5a059]/30 transition-all duration-700 ease-in-out group-hover:grayscale-0 group-hover:contrast-100">
+                </div>
+           </div>
+       </section>
+
+        <section id="bookings" class="h-[80vh] bg-[#1a0505] relative flex items-center justify-center border-t border-[#c5a059]/30" data-scroll-section>
+            <div class="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/wood-pattern.png')]"></div>
+            <div class="relative z-10 w-full max-w-2xl px-6 md:px-8 text-center" data-scroll data-scroll-speed="1">
+                <h2 class="font-vintage text-4xl md:text-6xl text-[#c5a059] mb-4">Secure a Table</h2>
+                <p class="font-body text-white/70 italic mb-12">"Those who arrive late... don't arrive at all."</p>
+                <form class="space-y-4 md:space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                        <input type="text" placeholder="NAME" class="bg-black/40 border border-[#c5a059]/30 p-4 text-[#c5a059] placeholder-[#c5a059]/30 font-vintage focus:outline-none focus:border-[#c5a059] transition-all w-full">
+                        <input type="text" placeholder="DATE" class="bg-black/40 border border-[#c5a059]/30 p-4 text-[#c5a059] placeholder-[#c5a059]/30 font-vintage focus:outline-none focus:border-[#c5a059] transition-all w-full">
+                    </div>
+                    <input type="email" placeholder="EMAIL ADDRESS" class="w-full bg-black/40 border border-[#c5a059]/30 p-4 text-[#c5a059] placeholder-[#c5a059]/30 font-vintage focus:outline-none focus:border-[#c5a059] transition-all">
+                    <button class="w-full bg-[#c5a059] text-[#0b0c10] font-bold font-vintage py-5 tracking-[0.2em] hover:bg-white hover:tracking-[0.4em] transition-all duration-500 cursor-pointer">CONFIRM RESERVATION</button>
+                </form>
+            </div>
+        </section>
+
+        <footer class="bg-black py-12 border-t border-[#c5a059]/10 text-center relative z-20" data-scroll-section>
+            <p class="font-vintage text-[#c5a059]/40 text-[10px] tracking-[0.3em]">© 2025 SHELBY COMPANY LTD.</p>
+        </footer>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Flip.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js" defer></script>
+    <script src="app.js" defer></script>
+</body>
+</html>

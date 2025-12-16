@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | The Collection</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#050505] text-white overflow-x-hidden selection:bg-white selection:text-black">
+
+    <div id="loader" class="fixed inset-0 z-[9999] bg-[#050505] flex flex-col justify-center items-center">
+    
+    <div class="relative overflow-hidden">
+        <h1 class="text-9xl md:text-[12rem] font-bold tracking-tighter leading-none text-transparent stroke-white opacity-20 select-none">
+            <span id="counter">0</span>%
+        </h1>
+        <div id="counter-fill" class="absolute inset-0 text-9xl md:text-[12rem] font-bold tracking-tighter leading-none text-white overflow-hidden h-0 transition-all select-none">
+            <span id="counter-clone">0</span>%
+        </div>
+    </div>
+
+    <div class="mt-8 flex items-center gap-4 font-mono text-xs tracking-[0.3em] text-gray-400">
+        <div class="w-2 h-2 bg-[#c5a059] rounded-full animate-pulse"></div>
+        <span id="loader-text">INITIALIZING SYSTEM...</span>
+    </div>
+
+    <div class="absolute bottom-0 left-0 w-full h-1 bg-[#111]">
+        <div id="progress-bar" class="h-full bg-white w-0"></div>
+    </div>
+</div>
+
+    <div id="ambient-glow" class="fixed inset-0 z-0 opacity-40 pointer-events-none transition-colors duration-700 ease-in-out"></div>
+    <div class="noise-overlay"></div>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-circle"></div>
+
+    <header class="fixed top-0 w-full p-8 z-50 flex justify-between items-center mix-blend-difference">
+        <div class="text-xl font-bold tracking-tighter">SHARAFMADE</div>
+        <div class="text-xs tracking-[0.2em] opacity-60">IMMERSIVE WEB EXPERIENCES</div>
+    </header>
+
+    <main class="relative z-10 pt-32 pb-20 px-6 min-h-screen flex flex-col justify-center">
+        
+        <div class="container mx-auto max-w-7xl">
+            <h1 class="text-[5vw] leading-[0.9] font-bold mb-20 reveal-text">
+                SELECT YOUR <br> <span class="italic font-light text-white/50">EXPERIENCE</span>
+            </h1>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <a href="./peaky/index.html" target="_blank" class="project-card group" data-color="#c5a059">
+                    <div class="card-inner h-[60vh] relative overflow-hidden rounded-lg bg-[#111] border border-white/10 group-hover:border-[#c5a059] transition-colors duration-500">
+                        <div class="image-wrapper absolute inset-0">
+                            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors z-10"></div>
+                            <img src="assets/thumb-peaky.png" class="w-full h-full object-cover transform scale-100 group-hover:scale-110 transition-transform duration-1000 ease-out" alt="Peaky Blinders Site">
+                        </div>
+                        
+                        <div class="absolute bottom-0 left-0 w-full p-8 z-20 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                            <div class="text-[#c5a059] text-xs font-mono tracking-widest mb-2 opacity-0 group-hover:opacity-100 transition-opacity">1920s VINTAGE</div>
+                            <h2 class="text-3xl font-bold uppercase mb-2">The Garrison</h2>
+                            <p class="text-sm text-gray-400 opacity-60 group-hover:opacity-100 transition-opacity">GSAP ScrollTrigger • Parallax • Luxury Vibe</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./breaking/index.html" target="_blank" class="project-card group" data-color="#00F0FF">
+                    <div class="card-inner h-[60vh] relative overflow-hidden rounded-lg bg-[#111] border border-white/10 group-hover:border-[#00F0FF] transition-colors duration-500">
+                        <div class="image-wrapper absolute inset-0">
+                            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors z-10"></div>
+                            <img src="assets/thumb-breaking.png" class="w-full h-full object-cover transform scale-100 group-hover:scale-110 transition-transform duration-1000 ease-out" alt="Breaking Bad Site">
+                        </div>
+                        
+                        <div class="absolute bottom-0 left-0 w-full p-8 z-20 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                            <div class="text-[#00F0FF] text-xs font-mono tracking-widest mb-2 opacity-0 group-hover:opacity-100 transition-opacity">CHEMISTRY / CHAOS</div>
+                            <h2 class="text-3xl font-bold uppercase mb-2">Blue Sky</h2>
+                            <p class="text-sm text-gray-400 opacity-60 group-hover:opacity-100 transition-opacity">Particle Engine • 3D Tilt • Horizontal Scroll</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./derry/index.html" target="_blank" class="project-card group" data-color="#ff0000">
+                    <div class="card-inner h-[60vh] relative overflow-hidden rounded-lg bg-[#111] border border-white/10 group-hover:border-[#ff0000] transition-colors duration-500">
+                        <div class="image-wrapper absolute inset-0">
+                            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors z-10"></div>
+                            <img src="assets/thumb-derry.png" class="w-full h-full object-cover transform scale-100 group-hover:scale-110 transition-transform duration-1000 ease-out" alt="IT Horror Site">
+                        </div>
+                        
+                        <div class="absolute bottom-0 left-0 w-full p-8 z-20 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                            <div class="text-[#ff0000] text-xs font-mono tracking-widest mb-2 opacity-0 group-hover:opacity-100 transition-opacity">COSMIC HORROR</div>
+                            <h2 class="text-3xl font-bold uppercase mb-2">Lost & Found</h2>
+                            <p class="text-sm text-gray-400 opacity-60 group-hover:opacity-100 transition-opacity">Glitch Effects • Jumpscares • Dark Mode</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+        <section id="about" class="mt-40 pt-20 border-t border-white/10">
+    
+    <div class="mb-16 about-reveal">
+        <div class="text-xs font-mono tracking-widest text-gray-500 mb-4">FILE: 002_PROFILE</div>
+        <h2 class="text-[4vw] leading-[0.9] font-bold">
+            THE <span class="text-white/50 italic font-light">ARCHITECT</span>
+        </h2>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <div class="lg:col-span-5 about-reveal">
+            <h3 class="text-2xl font-light leading-relaxed text-gray-300 mb-8">
+                I am a <span class="text-white font-bold">React Front-End Developer</span> based in Morocco, crafting digital experiences that blend technical precision with artistic direction.
+            </h3>
+            <p class="text-gray-500 leading-loose mb-8">
+                Currently specializing in building micro-SaaS platforms and immersive web interfaces. My background in Information Technology allows me to bridge the gap between complex logic and fluid design.
+            </p>
+            
+            <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 border border-white/20 rounded-full text-xs hover:bg-white hover:text-black transition-colors duration-300">React</span>
+                <span class="px-3 py-1 border border-white/20 rounded-full text-xs hover:bg-white hover:text-black transition-colors duration-300">Tailwind</span>
+                <span class="px-3 py-1 border border-white/20 rounded-full text-xs hover:bg-white hover:text-black transition-colors duration-300">GSAP</span>
+                <span class="px-3 py-1 border border-white/20 rounded-full text-xs hover:bg-white hover:text-black transition-colors duration-300">Node.js</span>
+            </div>
+        </div>
+
+        <div class="lg:col-span-7 grid gap-8 about-reveal">
+
+            <div class="group border-l border-white/10 pl-6 hover:border-white transition-colors duration-500">
+                <h4 class="text-xs tracking-widest text-gray-500 mb-4 uppercase">Experience</h4>
+                <div class="space-y-4">
+                    <div class="flex justify-between items-baseline">
+                        <span class="text-lg font-medium group-hover:text-[#c5a059] transition-colors">Freelance Developer</span>
+                        <span class="text-xs font-mono text-gray-600">2023 - PRES</span>
+                    </div>
+                    <p class="text-sm text-gray-400">Developing custom web solutions and micro-SaaS products for the local market.</p>
+                </div>
+            </div>
+
+            <div class="group border-l border-white/10 pl-6 hover:border-white transition-colors duration-500">
+                <h4 class="text-xs tracking-widest text-gray-500 mb-4 uppercase">Education</h4>
+                <div class="space-y-4">
+                    <div class="flex justify-between items-baseline">
+                        <span class="text-lg font-medium group-hover:text-[#00F0FF] transition-colors">Bachelors in IT</span>
+                        <span class="text-xs font-mono text-gray-600">GRADUATED</span>
+                    </div>
+                    <p class="text-sm text-gray-400">Specialized in Software Engineering and Information Systems.</p>
+                </div>
+            </div>
+
+            <div class="group border-l border-white/10 pl-6 hover:border-white transition-colors duration-500">
+                <h4 class="text-xs tracking-widest text-gray-500 mb-4 uppercase">Certifications</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li class="flex items-center gap-2">
+                        <div class="w-1 h-1 bg-white rounded-full"></div>
+                        <span>Meta Front-End Developer</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <div class="w-1 h-1 bg-white rounded-full"></div>
+                        <span>Advanced React Patterns</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+    </main>
+
+    <footer class="fixed bottom-8 left-8 z-50 mix-blend-difference pointer-events-none hidden md:block">
+        <div class="w-24 h-[1px] bg-white mb-2"></div>
+        <div class="text-xs">SCROLL TO EXPLORE</div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
