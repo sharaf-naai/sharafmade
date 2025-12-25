@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOUSS | Specialty Coffee Marrakech</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#F5F2EB] text-[#2C1810] overflow-x-hidden selection:bg-[#D4AF37] selection:text-white">
+
+    <nav class="fixed top-0 w-full p-8 flex justify-between items-center z-50 mix-blend-difference text-[#F5F2EB]">
+        <div class="text-xs font-sans tracking-[0.3em] uppercase">Est. 2024</div>
+        <div class="text-2xl font-serif italic">Nouss.</div>
+        <div class="text-xs font-sans tracking-[0.3em] uppercase cursor-pointer hover:opacity-70 transition-opacity"><a href="#menu">Menu</a></div>
+    </nav>
+
+    <header class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-black/30 z-10"></div>
+            <img src="cup.jpg" 
+                 class="w-full h-full object-cover parallax-img" alt="Coffee Pour">
+        </div>
+
+        <div class="relative z-20 text-center text-[#F5F2EB] hero-content opacity-0 translate-y-10">
+            <p class="font-sans text-xs tracking-[0.5em] mb-6 uppercase">Guéliz • Marrakech</p>
+            <h1 class="font-serif text-[15vw] leading-[0.8] mix-blend-overlay opacity-90">
+                AROMA
+            </h1>
+            <h1 class="font-serif text-[15vw] leading-[0.8] italic -mt-4 md:-mt-10 text-[#D4AF37]">
+                CULTURE
+            </h1>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 text-[#F5F2EB]">
+            <div class="w-[1px] h-16 bg-[#F5F2EB]/50 mx-auto mb-4"></div>
+            <span class="font-sans text-[10px] tracking-widest uppercase">Scroll</span>
+        </div>
+    </header>
+
+    <section class="py-32 px-6 md:px-20 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <div class="reveal-text">
+            <h2 class="font-serif text-5xl md:text-7xl mb-8 leading-none">
+                More than <br> <span class="italic text-[#D4AF37]">Just a Brew.</span>
+            </h2>
+            <p class="font-sans text-lg font-light leading-relaxed text-[#5A4A42]">
+                Nestled in the heart of the Red City, NOUSS redefines the Moroccan coffee ritual. We source single-origin beans from the Atlas Mountains and roast them in small batches daily. It is not just caffeine; it is a pause in time.
+            </p>
+        </div>
+        <div class="relative h-[600px] w-full overflow-hidden rounded-t-[200px] reveal-image">
+            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=1887&auto=format&fit=crop" 
+                 class="w-full h-full object-cover hover:scale-110 transition-transform duration-[1.5s]" alt="Moroccan Interior">
+        </div>
+    </section>
+
+    <section id="menu" class="min-h-screen bg-[#2C1810] text-[#F5F2EB] py-32 relative">
+        <div class="container mx-auto px-6 md:px-20 flex flex-col md:flex-row gap-20">
+            
+            <div class="md:w-1/3 md:sticky md:top-32 h-fit mb-12 md:mb-0">
+                <span class="font-sans text-[#D4AF37] text-xs tracking-[0.3em] uppercase block mb-4">The Selection</span>
+                <h2 class="font-serif text-6xl md:text-8xl">Our <br> Craft</h2>
+                <p class="font-sans text-sm mt-8 opacity-60 leading-loose max-w-xs">
+                    Curated blends designed to awaken the senses. Served with traditional Moroccan hospitality.
+                </p>
+            </div>
+
+            <div class="md:w-2/3 space-y-32">
+                
+                <div class="space-y-24">
+                    <div class="border-b border-[#D4AF37]/30 pb-4 mb-12 reveal-item">
+                        <span class="font-sans text-[#D4AF37] text-xs tracking-[0.3em] uppercase">01. Signatures</span>
+                    </div>
+
+                    <div class="menu-item group cursor-pointer reveal-item">
+                        <div class="overflow-hidden mb-6 h-[300px] w-full relative">
+                            <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10"></div>
+                            <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=1887&auto=format&fit=crop" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-[#F5F2EB]/20 pb-4">
+                            <h3 class="font-serif text-4xl group-hover:italic transition-all">The Nouss-Nouss</h3>
+                            <span class="font-sans text-lg">25 DH</span>
+                        </div>
+                        <p class="font-sans text-sm mt-4 opacity-60">Half espresso, half steamed milk. The Marrakesh classic.</p>
+                    </div>
+
+                    <div class="menu-item group cursor-pointer reveal-item">
+                        <div class="overflow-hidden mb-6 h-[300px] w-full relative">
+                            <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10"></div>
+                            <img src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?q=80&w=1887&auto=format&fit=crop" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-[#F5F2EB]/20 pb-4">
+                            <h3 class="font-serif text-4xl group-hover:italic transition-all">Saffron Cortado</h3>
+                            <span class="font-sans text-lg">35 DH</span>
+                        </div>
+                        <p class="font-sans text-sm mt-4 opacity-60">Espresso cut with warm milk infused with Taliouine saffron.</p>
+                    </div>
+
+                    <div class="menu-item group cursor-pointer reveal-item">
+                        <div class="overflow-hidden mb-6 h-[300px] w-full relative">
+                            <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10"></div>
+                            <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?q=80&w=1870&auto=format&fit=crop" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-[#F5F2EB]/20 pb-4">
+                            <h3 class="font-serif text-4xl group-hover:italic transition-all">Cardamom Black</h3>
+                            <span class="font-sans text-lg">30 DH</span>
+                        </div>
+                        <p class="font-sans text-sm mt-4 opacity-60">Robust dark roast brewed with crushed cardamom pods.</p>
+                    </div>
+                </div>
+
+                <div class="space-y-24">
+                    <div class="border-b border-[#D4AF37]/30 pb-4 mb-12 reveal-item">
+                        <span class="font-sans text-[#D4AF37] text-xs tracking-[0.3em] uppercase">02. Infusions</span>
+                    </div>
+
+                    <div class="menu-item group cursor-pointer reveal-item">
+                        <div class="overflow-hidden mb-6 h-[300px] w-full relative">
+                            <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10"></div>
+                            <img src="https://images.unsplash.com/photo-1627435601361-ec25f5b1d0e5?q=80&w=1770&auto=format&fit=crop" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-[#F5F2EB]/20 pb-4">
+                            <h3 class="font-serif text-4xl group-hover:italic transition-all">Royal Nana Mint</h3>
+                            <span class="font-sans text-lg">30 DH</span>
+                        </div>
+                        <p class="font-sans text-sm mt-4 opacity-60">Gunpowder green tea, fresh spearmint, organic cane sugar.</p>
+                    </div>
+
+                    <div class="menu-item group cursor-pointer reveal-item">
+                        <div class="overflow-hidden mb-6 h-[300px] w-full relative">
+                            <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10"></div>
+                            <img src="https://images.unsplash.com/photo-1559525839-b184a4d698c7?q=80&w=1770&auto=format&fit=crop" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-[#F5F2EB]/20 pb-4">
+                            <h3 class="font-serif text-4xl group-hover:italic transition-all">Majorelle Matcha</h3>
+                            <span class="font-sans text-lg">40 DH</span>
+                        </div>
+                        <p class="font-sans text-sm mt-4 opacity-60">Ceremonial grade matcha, oat milk, orange blossom water.</p>
+                    </div>
+                </div>
+
+                <div class="space-y-24">
+                    <div class="border-b border-[#D4AF37]/30 pb-4 mb-12 reveal-item">
+                        <span class="font-sans text-[#D4AF37] text-xs tracking-[0.3em] uppercase">03. Pâtisserie</span>
+                    </div>
+
+                    <div class="menu-item group cursor-pointer reveal-item">
+                        <div class="overflow-hidden mb-6 h-[300px] w-full relative">
+                            <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10"></div>
+                            <img src="https://images.unsplash.com/photo-1579372786545-d24232daf58c?q=80&w=1770&auto=format&fit=crop" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-[#F5F2EB]/20 pb-4">
+                            <h3 class="font-serif text-4xl group-hover:italic transition-all">Gazelle Horns</h3>
+                            <span class="font-sans text-lg">15 DH</span>
+                        </div>
+                        <p class="font-sans text-sm mt-4 opacity-60">Delicate pastry filled with almond paste and orange blossom.</p>
+                    </div>
+
+                    <div class="menu-item group cursor-pointer reveal-item">
+                        <div class="overflow-hidden mb-6 h-[300px] w-full relative">
+                            <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10"></div>
+                            <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?q=80&w=1770&auto=format&fit=crop" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-[#F5F2EB]/20 pb-4">
+                            <h3 class="font-serif text-4xl group-hover:italic transition-all">Date & Walnut Tart</h3>
+                            <span class="font-sans text-lg">45 DH</span>
+                        </div>
+                        <p class="font-sans text-sm mt-4 opacity-60">Local Zagora dates, caramelized walnuts, crème fraîche.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="h-[80vh] bg-[#F5F2EB] flex flex-col items-center justify-center text-center px-6 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full opacity-[0.03] bg-[url('https://www.transparenttextures.com/patterns/arabesque.png')]"></div>
+        
+        <div class="relative z-10">
+            <p class="font-sans text-[#D4AF37] text-xs tracking-[0.5em] uppercase mb-6">The Experience</p>
+            <h2 class="font-serif text-6xl md:text-9xl text-[#2C1810] mb-12">Visit Us.</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 font-sans font-light text-[#5A4A42]">
+                <div>
+                    <h4 class="font-serif text-2xl text-[#2C1810] mb-4">Guéliz</h4>
+                    <p>14 Rue de la Liberté</p>
+                    <p>Marrakech, 40000</p>
+                </div>
+                <div>
+                    <h4 class="font-serif text-2xl text-[#2C1810] mb-4">Hours</h4>
+                    <p>Mon - Sun</p>
+                    <p>07:00 - 22:00</p>
+                </div>
+            </div>
+
+            <button class="mt-16 border border-[#2C1810] px-10 py-4 text-xs tracking-[0.2em] uppercase hover:bg-[#2C1810] hover:text-[#F5F2EB] transition-all duration-500">
+                Get Directions
+            </button>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Garrison | Small Heath</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#0b0c10] text-[#c5c6c7] overflow-x-hidden selection:bg-[#c5a059] selection:text-black">
+
+    <div class="noise-overlay"></div>
+
+    <nav class="fixed top-0 w-full p-6 md:p-8 flex justify-between items-center z-50 bg-gradient-to-b from-[#0b0c10] to-transparent mix-blend-difference">
+        <div class="group cursor-pointer">
+            <span class="font-vintage text-[#c5a059] text-lg md:text-xl tracking-widest group-hover:text-white transition-colors duration-300">EST. 1919</span>
+        </div>
+        
+        <ul class="flex gap-4 md:gap-12 font-vintage text-[10px] md:text-xs tracking-[0.2em] text-[#c5a059]">
+            <li><a href="#brothers" class="hover:text-white transition-colors duration-300">FAMILY</a></li>
+            <li><a href="#menu" class="hover:text-white transition-colors duration-300">SPIRITS</a></li>
+            <li><a href="#bookings" class="hover:text-white transition-colors duration-300">BOOK</a></li>
+        </ul>
+    </nav>
+
+    <section class="h-screen w-full relative flex flex-col justify-center items-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-[#0b0c10]/40 z-10"></div>
+            </div>
+
+        <div class="z-20 text-center px-4 relative hero-content opacity-0 translate-y-10">
+            <h1 class="font-vintage text-[15vw] md:text-[13vw] leading-[0.8] text-[#c5a059] tracking-tighter uppercase whitespace-nowrap drop-shadow-2xl mix-blend-overlay opacity-80">
+                The Garrison
+            </h1>
+            <p class="font-body tracking-[0.5em] md:tracking-[0.8em] text-[#c5a059] mt-6 text-xs md:text-sm uppercase">Small Heath • Birmingham</p>
+        </div>
+
+        <div class="absolute bottom-10 flex flex-col items-center gap-2 text-[#c5a059]/60 z-20">
+            <span class="text-[10px] tracking-[0.3em] uppercase font-vintage">Scroll Down</span>
+            <div class="w-[1px] h-12 bg-[#c5a059]"></div>
+        </div>
+    </section>
+
+    <section id="brothers" class="py-24 md:py-40 relative bg-[#0b0c10] border-b border-[#c5a059]/10">
+         <div class="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            
+            <div class="relative group order-2 md:order-1 reveal-image h-[500px] overflow-hidden border border-[#c5a059]/20">
+                <div class="absolute inset-0 bg-[#c5a059]/10 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
+                <img src="assets/brothers.webp" alt="Shelby Brothers" class="w-full h-full object-cover grayscale contrast-125 transform group-hover:scale-105 transition-transform duration-[1.5s]">
+            </div>
+
+            <div class="space-y-8 order-1 md:order-2 reveal-text">
+                <h2 class="font-vintage text-4xl md:text-6xl text-[#c5a059]">The Shelby <br>Company Ltd.</h2>
+                <div class="w-24 h-[1px] bg-[#4a0e0e]"></div>
+                <p class="font-body text-lg md:text-xl leading-relaxed text-gray-400 font-light">
+                    "We're not politicians, we're businessmen."
+                </p>
+                <p class="font-body text-sm md:text-base leading-loose text-gray-500 max-w-md">
+                    Owned and operated by Thomas and Arthur Shelby. The Garrison isn't just a pub; it's the headquarters of an empire built on ambition, loyalty, and fine Irish whiskey.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="min-h-screen bg-[#08080a] relative py-32">
+        <div class="container mx-auto px-6 md:px-20 flex flex-col md:flex-row gap-20">
+            
+            <div class="md:w-1/3 md:sticky md:top-32 h-fit mb-12 md:mb-0">
+                <span class="font-vintage text-[#c5a059] text-xs tracking-[0.3em] uppercase block mb-4 opacity-60">The Cellar</span>
+                <h2 class="font-vintage text-5xl md:text-7xl text-[#c5c6c7]">Imported <br> Spirits</h2>
+                <p class="font-body text-sm mt-8 opacity-40 leading-loose max-w-xs">
+                    "Good whiskey tells you who's real and who isn't."
+                </p>
+            </div>
+
+            <div class="md:w-2/3 space-y-24">
+                
+                <div class="space-y-16">
+                    <div class="border-b border-[#c5a059]/20 pb-4 mb-8 reveal-item">
+                        <span class="font-vintage text-[#c5a059] text-xs tracking-[0.3em] uppercase">01. Gin</span>
+                    </div>
+
+                    <div class="menu-item group flex gap-8 items-center cursor-pointer reveal-item">
+                        <div class="w-24 h-32 overflow-hidden relative border border-[#c5a059]/10">
+                            <img src="assets/Polly.png" class="w-full h-full object-contain p-2 grayscale group-hover:grayscale-0 transition-all duration-500">
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex justify-between items-baseline mb-2">
+                                <h3 class="font-vintage text-2xl text-[#c5a059] group-hover:text-white transition-colors">Aunt Polly's Gin</h3>
+                                <span class="font-vintage text-sm">£12.00</span>
+                            </div>
+                            <p class="font-body text-xs text-gray-500 tracking-widest uppercase">Dry • Juniper • Dangerous</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-16">
+                    <div class="border-b border-[#c5a059]/20 pb-4 mb-8 reveal-item">
+                        <span class="font-vintage text-[#c5a059] text-xs tracking-[0.3em] uppercase">02. Whiskey</span>
+                    </div>
+
+                    <div class="menu-item group flex gap-8 items-center cursor-pointer reveal-item">
+                        <div class="w-24 h-32 overflow-hidden relative border border-[#c5a059]/10">
+                            <img src="assets/Changretta.png" class="w-full h-full object-contain p-2 grayscale group-hover:grayscale-0 transition-all duration-500">
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex justify-between items-baseline mb-2">
+                                <h3 class="font-vintage text-2xl text-[#c5a059] group-hover:text-white transition-colors">Changretta's Revenge</h3>
+                                <span class="font-vintage text-sm">£14.00</span>
+                            </div>
+                            <p class="font-body text-xs text-gray-500 tracking-widest uppercase">Italian Import • Smokey</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item group flex gap-8 items-center cursor-pointer reveal-item">
+                        <div class="w-24 h-32 overflow-hidden relative border border-[#c5a059]/10">
+                            <img src="assets/Red.png" class="w-full h-full object-contain p-2 grayscale group-hover:grayscale-0 transition-all duration-500">
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex justify-between items-baseline mb-2">
+                                <h3 class="font-vintage text-2xl text-[#c5a059] group-hover:text-white transition-colors">Red Right Hand</h3>
+                                <span class="font-vintage text-sm">£16.00</span>
+                            </div>
+                            <p class="font-body text-xs text-gray-500 tracking-widest uppercase">House Special • Blood Orange</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-16">
+                    <div class="border-b border-[#c5a059]/20 pb-4 mb-8 reveal-item">
+                        <span class="font-vintage text-[#c5a059] text-xs tracking-[0.3em] uppercase">03. Rum</span>
+                    </div>
+
+                    <div class="menu-item group flex gap-8 items-center cursor-pointer reveal-item">
+                        <div class="w-24 h-32 overflow-hidden relative border border-[#c5a059]/10">
+                            <img src="assets/Solomon.png" class="w-full h-full object-contain p-2 grayscale group-hover:grayscale-0 transition-all duration-500">
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex justify-between items-baseline mb-2">
+                                <h3 class="font-vintage text-2xl text-[#c5a059] group-hover:text-white transition-colors">Alfie's Rum</h3>
+                                <span class="font-vintage text-sm">£13.00</span>
+                            </div>
+                            <p class="font-body text-xs text-gray-500 tracking-widest uppercase">Camden Town Import • Spiced</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="betting" class="py-24 bg-[#050505] relative flex flex-col justify-center items-center border-y border-[#c5a059]/20">
+        <div class="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/black-chalk.png')]"></div>
+        <div class="relative z-10 w-full max-w-5xl px-6">
+            
+            <div class="flex justify-between items-end mb-16 reveal-text">
+                <div>
+                    <h2 class="font-vintage text-4xl md:text-5xl text-[#c5a059]">The Races</h2>
+                    <p class="font-body text-gray-500 text-xs tracking-[0.3em] mt-2 uppercase">Odds by the Shelby Co.</p>
+                </div>
+                <div class="animate-pulse text-[#c5a059]">● LIVE</div>
+            </div>
+
+            <div class="space-y-4 font-vintage">
+                <div class="group relative bg-[#111] p-6 border border-[#333] hover:border-[#c5a059] transition-all duration-500 flex justify-between items-center cursor-default reveal-item hover:pl-8">
+                    <div class="flex items-center gap-6">
+                        <span class="text-4xl text-[#c5a059]/20 font-bold group-hover:text-[#c5a059] transition-colors">01</span>
+                        <div>
+                            <h3 class="text-xl text-white group-hover:text-[#c5a059] transition-colors">Monaghan Boy</h3>
+                            <p class="font-body text-[10px] text-gray-500 tracking-widest">JOCKEY: T. SHELBY</p>
+                        </div>
+                    </div>
+                    <div class="text-3xl text-[#c5a059]">5/2</div>
+                </div>
+                <div class="group relative bg-[#111] p-6 border border-[#333] hover:border-[#c5a059] transition-all duration-500 flex justify-between items-center cursor-default reveal-item hover:pl-8">
+                    <div class="flex items-center gap-6">
+                        <span class="text-4xl text-[#c5a059]/20 font-bold group-hover:text-[#c5a059] transition-colors">02</span>
+                        <div>
+                            <h3 class="text-xl text-white group-hover:text-[#c5a059] transition-colors">Grace's Secret</h3>
+                            <p class="font-body text-[10px] text-gray-500 tracking-widest">JOCKEY: A. SOLOMONS</p>
+                        </div>
+                    </div>
+                    <div class="text-3xl text-[#c5a059]">7/1</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="bookings" class="h-[80vh] bg-[#1a0505] relative flex items-center justify-center border-t border-[#c5a059]/30">
+        <div class="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/wood-pattern.png')]"></div>
+        <div class="relative z-10 w-full max-w-2xl px-6 md:px-8 text-center reveal-text">
+            <h2 class="font-vintage text-5xl md:text-7xl text-[#c5a059] mb-6">Secure a Table</h2>
+            <p class="font-body text-white/50 italic mb-12">"Those who arrive late... don't arrive at all."</p>
+            
+            <form class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <input type="text" placeholder="NAME" class="bg-transparent border-b border-[#c5a059]/30 py-4 text-[#c5a059] placeholder-[#c5a059]/30 font-vintage focus:outline-none focus:border-[#c5a059] transition-all w-full text-center md:text-left">
+                    <input type="text" placeholder="DATE" class="bg-transparent border-b border-[#c5a059]/30 py-4 text-[#c5a059] placeholder-[#c5a059]/30 font-vintage focus:outline-none focus:border-[#c5a059] transition-all w-full text-center md:text-left">
+                </div>
+                <input type="email" placeholder="EMAIL ADDRESS" class="w-full bg-transparent border-b border-[#c5a059]/30 py-4 text-[#c5a059] placeholder-[#c5a059]/30 font-vintage focus:outline-none focus:border-[#c5a059] transition-all text-center md:text-left">
+                
+                <button type="button" class="mt-12 px-12 py-4 border border-[#c5a059] text-[#c5a059] font-vintage text-sm tracking-[0.3em] hover:bg-[#c5a059] hover:text-black transition-all duration-500 cursor-pointer uppercase">Confirm Reservation</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-black py-12 border-t border-[#c5a059]/10 text-center">
+        <p class="font-vintage text-[#c5a059]/40 text-[10px] tracking-[0.3em]">© 2025 SHELBY COMPANY LTD. - SHARAFMADE</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

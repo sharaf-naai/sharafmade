@@ -1,0 +1,33 @@
+/* FONTS */
+.font-vintage { font-family: 'Cinzel', serif; }
+.font-body { font-family: 'Playfair Display', serif; }
+
+/* BASE STYLES */
+html { scroll-behavior: smooth; }
+body { 
+    background-color: #0b0c10; 
+    color: #c5c6c7; 
+}
+
+/* NOISE OVERLAY */
+.noise-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: 50;
+    opacity: 0.04;
+    background-image: url("https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.3.0/examples/patterns/noise.png");
+    mix-blend-mode: overlay;
+}
+
+/* ANIMATION CLASSES (Used by app.js) */
+.reveal-active {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-text, .reveal-image, .reveal-item {
+    opacity: 0;
+    transform: translateY(50px);
+}

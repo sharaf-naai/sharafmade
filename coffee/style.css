@@ -1,0 +1,31 @@
+/* FONTS */
+.font-serif { font-family: 'DM Serif Display', serif; }
+.font-sans { font-family: 'Montserrat', sans-serif; }
+
+/* SMOOTH SCROLL */
+html {
+    scroll-behavior: smooth;
+}
+
+/* CUSTOM SCROLLBAR */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #F5F2EB;
+}
+::-webkit-scrollbar-thumb {
+    background: #2C1810;
+}
+
+/* ANIMATION CLASSES */
+.reveal-active {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-text, .reveal-image, .reveal-item {
+    opacity: 0;
+    transform: translateY(50px);
+}

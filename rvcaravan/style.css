@@ -1,0 +1,45 @@
+/* --- TYPOGRAPHY --- */
+.font-display { font-family: 'Oswald', sans-serif; }
+.font-mono { font-family: 'Roboto Mono', monospace; }
+
+/* --- UTILITIES & EFFECTS --- */
+body { 
+    background-color: #0a0a0a; 
+    color: #e5e5e5; 
+    overflow-x: hidden;
+}
+
+/* Text Stroke */
+.stroke-cyan { -webkit-text-stroke: 1px #00F0FF; color: transparent; }
+.stroke-white { -webkit-text-stroke: 1px rgba(255,255,255,0.3); color: transparent; }
+@media (min-width: 768px) {
+    .stroke-cyan-lg { -webkit-text-stroke: 2px #00F0FF; }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0a0a0a; }
+::-webkit-scrollbar-thumb { background: #333; }
+::-webkit-scrollbar-thumb:hover { background: #00F0FF; }
+
+/* Marquee Animation */
+.marquee-container { overflow: hidden; white-space: nowrap; }
+.marquee-content { display: inline-block; animation: marquee 20s linear infinite; }
+@keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+/* Pulsing Recording Dot */
+.pulse-dot {
+    animation: pulse-red 2s infinite;
+}
+@keyframes pulse-red {
+    0% { opacity: 1; box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+    70% { opacity: 0.7; box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }
+    100% { opacity: 1; box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+}
+
+/* Card Hover Tilt Base */
+.tilt-card { transition: transform 0.3s ease, border-color 0.3s ease; will-change: transform; }
+.tilt-card:hover { transform: translateY(-5px) scale(1.01); }
+
+/* General Section Padding */
+.section-pad { padding-top: 8rem; padding-bottom: 8rem; }
